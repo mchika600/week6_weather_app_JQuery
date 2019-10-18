@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Forecast</title>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container background_image">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <form action=""  name="submit-form" id="change-form">
+                    <div class="form-group">
+                        <label for=" ">Hi, Enter City to See Weather Forecst for Today!</label>
+                        <input type="text" name="City" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button onClick="getWeather()" type="button" class="btn btn-primary">Search</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div id="City-table" class="col-3">
+                <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="th1">High</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" id="high"></td>
+                            </tr>
+                        </tbody>
+                </table>
+                <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="th2">Low</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" id="low"></td>
+                            </tr>
+                        </tbody>
+                </table>
+                <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="th3">Forecast</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" id="forecast"></td>
+                            </tr>
+                        </tbody>
+                </table>
+                <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="th4">Humidity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td scope="row" id="humidity"></td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
